@@ -4,6 +4,12 @@ A simple memory game built using HTML, CSS, and JavaScript.
 
 ---
 
+## 🌐 Live Demo
+
+👉 https://simon-says-game-two-inky.vercel.app/
+
+---
+
 ## 📌 Description
 
 This game tests your memory skills.  
@@ -59,4 +65,4 @@ Each level adds a new color to the sequence.
 
 ## 💡 Note
 
-Game logic is handled using JavaScript functions like sequence generation, input checking, and reset.  
+Game logic is handled using JavaScript functions like sequence generation, input checking, and reset.
