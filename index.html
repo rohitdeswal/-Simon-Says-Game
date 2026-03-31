@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/simon.jpg">
+</head>
+<body>
+    <h1>Simon Says Game</h1>
+    <h2>Press any key to start the game</h2>
+
+    <div class="btn-container">
+        <div class="line-one">
+            <div class="btn red" type="button" id="red"></div>
+            <div class="btn yellow" type="button" id="yellow"></div>
+        </div>
+        <div class="line-two">
+            <div class="btn green" type="button" id="green"></div>
+            <div class="btn purple" type="button" id="purple"></div>
+        </div>
+    </div>
+    <div class="guide"><p>Start: Press any key to begin. <br>
+        Watch: The game flashes a random color (e.g., Red). <br>
+        Repeat: Click the same color that just flashed. <br>
+        Memorize: The game adds a new color to the end (e.g., Red → Blue). <br>
+        Match: Click the entire sequence in the exact order. <br>
+        Level Up: Every time you succeed, the sequence gets one step longer. <br>
+        Game Over: If you click the wrong color, the game ends and resets</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
