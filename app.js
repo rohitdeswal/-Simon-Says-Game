@@ -8,12 +8,15 @@ let level = 0;
 
 let h2 = document.querySelector("h2");
 
-document.addEventListener("keypress", function() {
+let startBtn = document.querySelector("#startBtn");
+
+startBtn.addEventListener("click", function() {
     if(started == false) {
         console.log("Game Started");
         started = true;
         let g = document.querySelector(".guide");
         g.style.display = "none";
+        startBtn.style.display = "none";
 
         levelup();
     }
@@ -52,7 +55,7 @@ function checkAns(idx) {
             setTimeout(levelup, 1000);
         }
     } else {
-        h2.innerHTML = `Game Over!  Your Score:  ${level-1}. <br>Press any key to restart.`;
+        h2.innerHTML = `💀 Game Over! Score: ${level-1} <br>Tap Start to play again`;
         document.querySelector("body").style.backgroundColor = "red";
         setTimeout(function() {
             document.querySelector("body").style.backgroundColor = "#f0f0f0";
@@ -84,4 +87,5 @@ function reset() {
 
     let g = document.querySelector(".guide");
     g.style.display = "inline-block";
+    startBtn.style.display = "inline-block";
 }
