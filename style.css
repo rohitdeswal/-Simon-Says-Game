@@ -1,6 +1,31 @@
 body {
    text-align: center;
-    background-color: #f0f0f0;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+
+}
+
+#startBtn {
+    padding: 12px 28px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    margin: 20px 0;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+#startBtn:hover {
+    box-shadow: 0 0 20px rgba(79, 172, 254, 0.5);
+    border-color: rgba(79, 172, 254, 0.6);
 }
 
 .btn {
@@ -43,14 +68,57 @@ body {
 .guide {
     font-size: 1rem;
     margin-top: 4rem;
-    border: 3px solid #000;
     display: inline-block;
     padding: 1rem;
-    background-color: beige;
+    background: rgba(255, 255, 255, 0.06);
+    color: #e6e6e6;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
 p {
     font-size: 1rem;
     text-align: left;
     font-style: italic;
+    
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        padding: 0 10px;
+    }
+
+    .btn {
+        height: 120px;
+        width: 120px;
+        margin: 0.5rem;
+        border: 6px solid #000;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .line-one, .line-two {
+        display: flex;
+    }
+
+    .guide {
+        font-size: 0.85rem;
+        margin: 2rem 1rem;
+        padding: 0.8rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
 }
